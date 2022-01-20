@@ -1,0 +1,17 @@
+const os = require('os');
+ 
+const local = {  
+  'Home Directory': os.homedir(),    
+  'Operating System': os.type(),
+  'Last Reboot': os.uptime()
+}
+console.log(local);
+
+//Second example
+const os = require('os');
+const server = {
+type: os.type(), 
+architecture: os.arch(), 
+uptime: os.uptime()
+};
+console.log(server);
